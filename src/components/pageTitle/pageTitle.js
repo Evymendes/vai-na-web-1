@@ -86,6 +86,7 @@ const LineOrange = styled.span`
 `;
 
 const Title = styled.h2`
+	margin: 0;
 	padding-bottom: ${props => props.pageBlog === 'postBlog' ? '1.125rem' : '2rem'};
 	width: ${props => props.pageBlog === 'postBlog' ? '90%' : ''};
 	max-width: 1272px;

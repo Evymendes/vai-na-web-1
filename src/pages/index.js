@@ -20,26 +20,6 @@ import ArticleBlog from '../components/blog/articleBlog'
 import BackgroundImage from '../images/images/dottedLine.svg';
 import ScrollArrow from '../images/icons/Group52.svg';
 import BackHeader from '../images/images/peopleNetwork.png';
-// import Aluna from '../images/images/peopleVNW/Aluna.png';
-// import Amanda from '../images/images/peopleVNW/Amanda.png';
-// import Cris from '../images/images/peopleVNW/cris.png';
-// import Desiree from '../images/images/peopleVNW/Desiree.png';
-// import Elizete from '../images/images/peopleVNW/Elizete.png';
-// import Gabriel from '../images/images/peopleVNW/Gabriel.png';
-// import Igor from '../images/images/peopleVNW/igor.png';
-// import Jeziel from '../images/images/peopleVNW/Jeziel.png';
-// import Kelvin from '../images/images/peopleVNW/Kelvin.png';
-// import Maicon from '../images/images/peopleVNW/Maicon.png';
-// import Luan from '../images/images/peopleVNW/Luan.png';
-// import Mari from '../images/images/peopleVNW/Mari.png';
-// import Pamela from '../images/images/peopleVNW/Pamela.png';
-// import Matheus from '../images/images/peopleVNW/Matheus.png';
-// import Michael from '../images/images/peopleVNW/Michael.png';
-// import Pedro from '../images/images/peopleVNW/Pedro.png';
-// import Pri from '../images/images/peopleVNW/Pri.png';
-// import Raissa from '../images/images/peopleVNW/Raissa.png';
-// import Rhuan from '../images/images/peopleVNW/Rhuan.png';
-// import Tati from '../images/images/peopleVNW/Tati.png';
 import ImageRocket from '../images/images/Group7294.svg';
 import ImageLogoVnW from '../images/icons/logo-VNW.svg';
 import ImageEstudioVnW from '../images/images/logoEstudio.svg';
@@ -47,8 +27,6 @@ import ImageSirio from '../images/images/hospitalSirio.png';
 import ImageProadi from '../images/images/proadiSus.png';
 import ImageVotorantim from '../images/images/Instituto-Votorantim.png';
 import ImagePetronect from '../images/images/Petronect.png';
-import ImageBrasil from '../images/images/Group7507.png';
-
 
 var scrollDow = function () {
   window.scrollTo(0, 740);
@@ -75,19 +53,11 @@ const Content = styled.div`
   padding: 0 4rem;
 `;
 
-// const ContentHeader = styled.section`
-//   height: 100vh;
-// `;
-
 const DottedLineBackground = styled.div`
   background: url(${BackgroundImage}); 
   background-repeat: no-repeat; 
   background-size: 100%;
 `;
-
-// const ContentNetwork = styled.div`
-//   padding-bottom: 8.777rem;
-// `;
 
 const ContentCard = styled.div`
   position: relative;
@@ -114,28 +84,21 @@ const ButtonScroll = styled.button`
   padding-left: 2rem;
   border: none;
   background: transparent;
-  /* margin-bottom: 10rem; */
 `;
 
 const ContainerNetwork = styled.div`
-  /* margin-bottom: 8.777rem; */
   margin-top: 60vh;
   padding-bottom: 10rem;
 `;
 
 const ContentNetwork  = styled.div`
-  /* height: 100vh;
-  width: 100%; */
   display: flex;
-  /* margin-top: 2rem; */
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 20rem; */
   }
-
 `;
 
 const ContainerTextNetwork = styled.div`
@@ -302,44 +265,6 @@ const LinePartners = styled.div`
     left: ${props => props.MobileeLeft};
     width: ${props => props.MobileeWidth};
   }
-`;
-
-const SubTitleCases = styled.p`
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5rem;
-  width: 17.5rem;
-  margin-left: 11.6rem;
-  margin-top: -1rem;
-
-  @media (min-width: 1920px) {
-    margin-left: 16.6rem;
-    line-height: 2.5rem;
-    font-size: 22px;
-    width: 27.5rem;
-	}
-`;
-
-const ContainerCases = styled.div`
-  margin-top: 2.5rem;
-  margin-left: 11.6rem;
-  display: flex;
-`;
-
-const BoxButtons = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ButtonsItem = styled.span`
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 `;
 
 export const query = graphql`

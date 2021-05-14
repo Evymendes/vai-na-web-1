@@ -78,8 +78,8 @@ const ContainerImagesEstudio = styled.div `
   position: relative;
   right: 1rem;
 
-  @media (min-width: 1920px) {
-    margin-top: 4rem;
+  @media (max-width: 1920px) {
+    right: -8rem;
   }
 
   @media (max-width: 768px) {
@@ -628,6 +628,7 @@ const CircleOrange = styled.div `
 `;
 
 const TextNumberCircle = styled.h2 `
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 600;
   color: #0F2B92;
@@ -643,9 +644,9 @@ const TextNumberCircle = styled.h2 `
 
 const TextCircle = styled.p `
   width: 100%;
-  max-width: 8.3125rem;
+  max-width: 9.3125rem;
   text-align: center;
-  font-size: .9375rem;
+  font-size: .8375rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: #272727;

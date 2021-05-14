@@ -101,6 +101,7 @@ const Index = ({ data }) => {
 
 	return (
     <Layouts>
+		{console.log(data)}
 			<Container>
 				<PageTitle data={isTitle}/>
 				<Content>

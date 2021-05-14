@@ -13,7 +13,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center; */
   width: 100%;
-  padding: 4rem 0;
+  padding-top: 12.563rem;
 `;
 
 const Content = styled.div`
