@@ -41,7 +41,6 @@ const TypePage = styled.h1`
 	font-size: 1rem;
 	font-weight: 200;
 	color: #FFAC2D;
-	
 	width: fit-content;
 	border: 1px solid #FFAC2D;
 	border-radius: 19px;
@@ -64,13 +63,20 @@ const ContentTitle = styled.div`
 	display: flex;
 	padding-top: 1rem;
 	margin-left: -2.3rem;
+
+	@media (max-width: 768px) {
+		padding-top: 35%;
+		margin-left: 0.7rem;
+	}
 `;
 
 const LineOrange = styled.span`
-	padding-right: 0.5rem;
-	font-size: ${props => props.pageHome === 'isHome' ? '3rem' : ' 3.2rem'};
-	font-weight: 200;
 	color: #FF611E;
+	font-size: ${props => props.pageHome === 'isHome' ? '2.2rem' : ' 3.2rem'};
+	/* padding-right: 0.5rem;
+	font-size: ${props => props.pageHome === 'isHome' ? '3rem' : ' 3.2rem'}; */
+	font-weight: 200;
+	padding-right: 0.5rem;
 
 	@media (min-width: 1920px) {
 		font-size: 3.2rem;
@@ -80,9 +86,13 @@ const LineOrange = styled.span`
 		padding-left: 3.3rem;
 	}
 
+	@media (max-width: 580px) {
+		font-size: 1.9375rem;
+	}
+
 	@media (max-width: 425px) {
 		margin-left: 0rem;
-	  }
+	}
 `;
 
 const Title = styled.h2`
@@ -99,12 +109,16 @@ const Title = styled.h2`
 		width: 93%;
 	}
 
+	@media (max-width: 580px) {
+		font-size: 1.9375rem;
+	}
+
 	@media (max-width: 425px) {
-		font-size: 2rem;
+		/* font-size: 2rem; */
 	}
 
 	@media (max-width: 375px) {
-		font-size: 1.938rem;
+		/* font-size: 1.938rem; */
 	}
 `;
 
@@ -114,6 +128,13 @@ const ContentSubTitle = styled.div`
 	text-align: left;
 	justify-content: ${props => props.pageBlog === 'over' && 'flex-end'};
 	margin-top: ${props => props.pageBlog === 'over' && '4rem'};
+<<<<<<< HEAD
+
+	@media (max-width: 768px) {
+		margin-top: 40%;
+	}
+=======
+>>>>>>> 1e1486769db054e3326f4304eafd2e9a16ba767e
 `;
 
 const SubTitle = styled.p`
@@ -128,14 +149,14 @@ const SubTitle = styled.p`
     width: 100%;
 	}
 
-	@media (max-width: 648px) {
-    font-size: 2.5rem;
+	@media (max-width: 580px) {
+    font-size: 1.625rem;
 		padding: 0 0 4rem 3rem;
 	}
 
-	@media (max-width: 450px) {
+	/* @media (max-width: 450px) {
     font-size: 1.8rem;
-	}
+	} */
 `;
 
 const SubParagraph = styled.span`
@@ -144,10 +165,18 @@ const SubParagraph = styled.span`
 	font-weight: 300;
 	padding-left: 20%;
 
+	@media (max-width: 1250px) {
+		padding-left: 16%;
+	}
+
 	@media (max-width: 768px) {
 		display: flex;
 		padding-left: 0;
 		margin-top: 1em;
+	}
+
+	@media (max-width: 580px) {
+    font-size: 0.9375rem
 	}
 `;
 
